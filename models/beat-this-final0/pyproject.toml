@@ -1,0 +1,27 @@
+[project]
+name = "jinto-model-beat-this-final0"
+version = "1.0.0"
+description = "Export ONNX de beat_this final0 (CPJKU) : modèle de battements et frontal log-mel."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "beat-this",
+    "numpy",
+    "onnx",
+    "onnxruntime",
+    "torch",
+    "torchaudio",
+    # dépendances de beat_this, non déclarées par son pyproject
+    "einops",
+    "rotary-embedding-torch",
+    "soxr",
+]
+
+[tool.uv.sources]
+beat-this = { git = "https://github.com/CPJKU/beat_this", rev = "b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c" }
+torch = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

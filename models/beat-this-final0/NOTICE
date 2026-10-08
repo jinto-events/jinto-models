@@ -1,0 +1,9 @@
+Les fichiers publiés dans la Release `beat-this-final0-v*` dérivent de beat_this (CPJKU), publié sous licence MIT :
+
+  Dépôt   : https://github.com/CPJKU/beat_this (commit b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c)
+  Article : Foscarin, Schlüter, Widmer. « Beat this! Accurate beat tracking without DBN postprocessing », ISMIR 2024.
+  Licence : « The code and the published model weights are released under the MIT license. »
+            (le texte, avec la mention de copyright, est dans NOTICE.beat_this-LICENSE)
+
+Copyright (c) 2024 Institute of Computational Perception, JKU Linz, Austria.
+Les fichiers ONNX sont une conversion des poids `final0` ; aucun poids n'est modifié.
